@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身高(cm)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="As8-Ax-U8v">
+                                <rect key="frame" x="170" y="50" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RGa-jN-g94"/>
+                                    <constraint firstAttribute="width" constant="80" id="jhr-7Z-fdb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="體重(kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3c-Yu-RKB">
+                                <rect key="frame" x="170" y="100" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="33i-DB-YLj"/>
+                                    <constraint firstAttribute="height" constant="30" id="s2n-Xd-2sj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oyL-Be-fIp">
+                                <rect key="frame" x="260" y="50" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2we-qj-wFW"/>
+                                    <constraint firstAttribute="width" constant="80" id="5Hr-Oo-u7g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nnf-DH-deO">
+                                <rect key="frame" x="260" y="100" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="LT2-YP-cFy"/>
+                                    <constraint firstAttribute="height" constant="30" id="sdj-0W-V5A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB8-DS-6Qq">
+                                <rect key="frame" x="260" y="160" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1QK-0b-k5d"/>
+                                    <constraint firstAttribute="width" constant="80" id="nUx-aJ-Gb8"/>
+                                </constraints>
+                                <state key="normal" title="BMI計算"/>
+                                <connections>
+                                    <action selector="calculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRf-tx-7oL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plk-2I-BjZ">
+                                <rect key="frame" x="250" y="285" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ktY-DU-fbd"/>
+                                    <constraint firstAttribute="height" constant="30" id="xxM-Iw-5cX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OB8-DS-6Qq" firstAttribute="top" secondItem="Nnf-DH-deO" secondAttribute="bottom" constant="30" id="4iF-I9-apm"/>
+                            <constraint firstItem="n3c-Yu-RKB" firstAttribute="top" secondItem="As8-Ax-U8v" secondAttribute="bottom" constant="20" id="7PH-1w-JhF"/>
+                            <constraint firstItem="plk-2I-BjZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8q4-IN-hAM"/>
+                            <constraint firstItem="oyL-Be-fIp" firstAttribute="leading" secondItem="As8-Ax-U8v" secondAttribute="trailing" constant="10" id="BpU-UL-7TT"/>
+                            <constraint firstItem="Nnf-DH-deO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CKy-al-ceZ"/>
+                            <constraint firstItem="plk-2I-BjZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M7Q-ya-58T"/>
+                            <constraint firstItem="OB8-DS-6Qq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QDf-cG-uYR"/>
+                            <constraint firstItem="Nnf-DH-deO" firstAttribute="leading" secondItem="n3c-Yu-RKB" secondAttribute="trailing" constant="10" id="RSd-zX-lvP"/>
+                            <constraint firstItem="oyL-Be-fIp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKV-kJ-AD7"/>
+                            <constraint firstItem="oyL-Be-fIp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="ZC6-Fl-Qkc"/>
+                            <constraint firstItem="Nnf-DH-deO" firstAttribute="top" secondItem="oyL-Be-fIp" secondAttribute="bottom" constant="20" id="dYc-4T-cpa"/>
+                            <constraint firstItem="As8-Ax-U8v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="fin-YX-81S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bmiResult" destination="plk-2I-BjZ" id="Rr5-l5-ftf"/>
+                        <outlet property="calBMI" destination="OB8-DS-6Qq" id="J7J-Fl-mDk"/>
+                        <outlet property="inputHeight" destination="oyL-Be-fIp" id="ZuB-Ue-MGu"/>
+                        <outlet property="inputWeight" destination="Nnf-DH-deO" id="j6U-pb-IHj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
